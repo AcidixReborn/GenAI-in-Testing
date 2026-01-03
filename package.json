@@ -1,0 +1,31 @@
+{
+  "name": "genai-kyc-aml-testing",
+  "version": "1.0.0",
+  "description": "KYC and AML Banking Platform Testing Framework using Generative AI",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "generate:kyc": "node src/data-generators/kyc-data-generator.js",
+    "generate:aml": "node src/data-generators/aml-data-generator.js",
+    "generate:rtm": "node src/reporting/rtm.js",
+    "generate:report": "node src/reporting/test-report-generator.js"
+  },
+  "keywords": [
+    "kyc",
+    "aml",
+    "testing",
+    "synthetic-data",
+    "banking",
+    "compliance"
+  ],
+  "author": "TechSpark Solutions",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1"
+  }
+}
